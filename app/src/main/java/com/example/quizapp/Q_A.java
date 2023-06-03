@@ -1,4 +1,4 @@
-package com.example.quizapptest;
+package com.example.quizapp;
 
 public class Q_A {
     private String question, ansA, ansB, ansC, ansD, correctAns;
