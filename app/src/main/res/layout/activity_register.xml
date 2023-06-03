@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background"
+    tools:context=".RegAct">
+
+  <TextView
+      android:id="@+id/signuptitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="200dp"
+      android:layout_marginEnd="25dp"
+      android:layout_marginBottom="25dp"
+      android:gravity="center"
+      android:text="Sign Up"
+      android:textColor="@color/black"
+      android:textSize="35dp"
+      android:textStyle="bold" />
+
+
+
+  <EditText
+      android:id="@+id/signupEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/signuptitle"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="10dp"
+      android:background="#F7F7F7"
+      android:hint="Email"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      android:drawableLeft="@drawable/baseline_person_outline_24"
+      android:drawablePadding="8dp"/>
+
+  <EditText
+      android:id="@+id/signupPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/signupEmail"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="10dp"
+      android:background="#F7F7F7"
+      android:hint="Password"
+      android:padding="20dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      android:drawableLeft="@drawable/baseline_password_24"
+      android:drawablePadding="8dp"
+      android:inputType="textPassword"/>
+
+
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/signupbutton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/signupPassword"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="10dp"
+      android:backgroundTint="#ff3250"
+      android:text="REGISTER" />
+
+  <TextView
+      android:id="@+id/alreadyhaveacc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/signupbutton"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="-8dp"
+      android:textColor="#ff3250"
+      android:textStyle="bold"
+      android:text="Already Have An Account?" />
+
+  <TextView
+      android:id="@+id/info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/SocialIcons"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="-5dp"
+      android:text="Or Sign Up With" />
+
+
+
+  <LinearLayout
+      android:id="@+id/SocialIcons"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="25dp"
+      android:gravity="center">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/google" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/twitter" />
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>
